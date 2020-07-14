@@ -8,7 +8,8 @@ function sumar()
 	var numeroUno;
 	var numeroDos;
 
-	numeroUno = txtIdNumeroUno.value;
+	//numeroUno = txtIdNumeroUno.value;
+	numeroUno = document.getElementById("txtIdNumeroUno").value; // Busca el ID dentro del html.
 	numeroDos = txtIdNumeroDos.value;
 
 	numeroUno = parseInt(numeroUno);
