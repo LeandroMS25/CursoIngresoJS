@@ -61,7 +61,7 @@ function multiplicar()
 	
 	multiplicacion = numeroUno * numeroDos;
 
-	alert("La multiplicacion es: " + multiplicacion);
+	alert("La multiplicacion da: " + multiplicacion);
 }
 
 function dividir()
@@ -78,6 +78,6 @@ function dividir()
 
 	division = numeroUno / numeroDos;
 
-	alert("La division es: " + division);
+	alert("La division da: " + division);
 }
 

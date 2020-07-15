@@ -10,11 +10,13 @@ function mostrarAumento()
 	var resultado;
 
 	sueldo = txtIdSueldo.value;
-
 	sueldo = parseInt(sueldo);
 
-	aumento = 1.10;
-	resultado = sueldo * aumento;
+	aumento = sueldo * 0.1;
 
-	alert(txtIdResultado.value = resultado);
+	resultado = sueldo + aumento;
+
+	alert("El aumento fue de: " + aumento);
+	
+	txtIdResultado.value = resultado;
 }

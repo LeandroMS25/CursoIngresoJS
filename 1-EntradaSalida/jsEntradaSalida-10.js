@@ -10,13 +10,13 @@ function mostrarAumento()
 	var resultado;
 
 	importe = txtIdImporte.value;
-
 	importe = parseInt(importe);
 
-	descuento = 0.75;
+	descuento = importe * 0.25;
 
-	resultado = importe * descuento;
+	resultado = importe - descuento;
 
-	alert(txtIdResultado.value = resultado);
+	alert("El descuento fue de: " + descuento);
 
+	txtIdResultado.value = resultado;
 }
