@@ -8,7 +8,7 @@ function Rectangulo ()
 {
     var largo;
     var ancho;
-    var area;
+    var perimetro;
     var cantidadAlambre;
 
     largo = txtIdLargo.value;
@@ -17,31 +17,31 @@ function Rectangulo ()
     largo = parseInt(largo);
     ancho = parseInt(ancho);
 
-    area = largo * ancho;
+    perimetro = largo * 2 + ancho * 2; // El perimetro se saca multiplicando el largo y el ancho por 2
 
-    cantidadAlambre = area * 3;
+    cantidadAlambre = perimetro * 3;
 
-    alert("La cantidad de alambre que se debe comprar es: " + cantidadAlambre);
+    alert("La cantidad de alambre que se debe comprar es de: " + cantidadAlambre + " metros.");
 }
 function Circulo () 
 {
     var radio;
-    var pi; 
+    //var pi;
     var circunferencia;
     var cantidadAlambre;
 
     radio = txtIdRadio.value;
     radio = parseInt(radio);
     
-    pi = 3.14;
+    //pi = 3.14;
 
-    circunferencia = 2 * pi * radio;
+    circunferencia = 2 * Math.PI * radio; // Con Math traes constantes o funciones matematicas.
 
     cantidadAlambre = circunferencia * 3;
 
-    cantidadAlambre = parseInt(cantidadAlambre);
+    cantidadAlambre = cantidadAlambre.toFixed(2);
 
-    alert("La cantidad de alambre que se debe comprar es: " + cantidadAlambre);
+    alert("La cantidad de alambre que se debe comprar es de: " + cantidadAlambre + " metros.");
 }
 function Materiales () 
 {
