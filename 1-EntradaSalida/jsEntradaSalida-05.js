@@ -10,6 +10,6 @@ function mostrar()
 
 	// alert("Su nombre es: "+nombreIngresado)
 	// alert("Usted tiene: "+edadIngresada+" años")
-	alert("Usted se llama " + nombreIngresado + " y tiene " + edadIngresada + " años ");
+	alert("Usted se llama "+nombreIngresado+" y tiene "+edadIngresada+" años ");
 }
 
