@@ -13,7 +13,8 @@ function mostrar()
 
 	//alert(typeof(estadoCivilSeleccionado));
 
-	if(edad<18 && estadoCivilSeleccionado != "Soltero"){
+	if(edad<18 && estadoCivilSeleccionado != "Soltero")
+	{
 		alert("Es muy pequeño para no ser soltero");
 	}
 }//FIN DE LA FUNCIÓN
