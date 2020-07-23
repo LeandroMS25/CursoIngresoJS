@@ -1,10 +1,8 @@
 function mostrar()
 {
-	var aleatorio;
+	var numeroAleatorio;
 
-	aleatorio = Math.random()*10;
+	numeroAleatorio = Math.floor(Math.random()*10) + 1;
 
-	aleatorio = aleatorio.toFixed(0);
-
-	alert(aleatorio);
+	alert(numeroAleatorio);
 }//FIN DE LA FUNCIÓN

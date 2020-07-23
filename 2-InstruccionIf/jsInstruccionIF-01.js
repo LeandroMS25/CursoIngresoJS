@@ -7,7 +7,8 @@ function mostrar() {
 
 	// Operadores relacionales: (==), <, >, !=, <=, >=
 
-	if (edad==15) { //Condicional simple 
+	if (edad==15) 
+	{ //Condicional simple 
 		alert("Niña bonita");
 	}
 }//FIN DE LA FUNCIÓN

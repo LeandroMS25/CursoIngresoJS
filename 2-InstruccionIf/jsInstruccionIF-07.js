@@ -1,17 +1,16 @@
 function mostrar()
 {
 	var edad;
-	var estadoCivil;
 	var estadoCivilSeleccionado;
 
-	edad = parseInt(edad);
-
 	edad = txtIdEdad.value;
-	estadoCivil = document.getElementById("estadoCivil");
+	edad = parseInt(edad);
+	
+	estadoCivilSeleccionado = estadoCivil.value;
 
-	var estadoCivilSeleccionado = estadoCivil.options[estadoCivil.selectedIndex].text;
+	// var estadoCivilSeleccionado = estadoCivilSeleccionado.options[estadoCivilSeleccionado.selectedIndex].text;
 
-	//alert(typeof(estadoCivilSeleccionado));
+	// alert(typeof(estadoCivilSeleccionado));
 
 	if(edad<18 && estadoCivilSeleccionado != "Soltero")
 	{

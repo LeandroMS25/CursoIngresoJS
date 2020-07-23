@@ -1,24 +1,29 @@
+/*
+Leandro Sobrino
+Al presionar el Botón, asignar una nota RANDOM al examen y mostrar:
+"EXCELENTE" para notas igual a 9 o 10,
+"APROBÓ" para notas mayores a 4,
+"Vamos, la proxima se puede" para notas menores a 4.
+*/
 function mostrar()
 {
 	var notaExamen;
 
-	notaExamen = Math.random()*10;
-
-	notaExamen = notaExamen.toFixed(0);
+	notaExamen = Math.floor(Math.random()*10) + 1;
 
 	if(notaExamen>8)
 	{
-		alert("La nota fue: "+notaExamen+" ¡EXCELENTE!");
+		alert("¡EXCELENTE!");
 	} 
 	else 
 	{	
 		if (notaExamen>3) 
 		{
-			alert("La nota fue: "+notaExamen+" ¡APROBÓ!");
+			alert("¡APROBÓ!");
 		}
 		else 
 		{
-			alert("La nota fue: "+notaExamen+" ¡Vamos, la proxima se puede!");
+			alert("¡Vamos, la proxima se puede!");
 		}		
 	}
 }//FIN DE LA FUNCIÓN
