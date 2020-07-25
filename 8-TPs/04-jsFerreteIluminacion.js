@@ -26,7 +26,9 @@ function CalcularPrecio ()
     cantidadLamparas = parseInt(cantidadLamparas);
     
     marcaSeleccionada = Marca.value;
-
+    
+    // IF
+    /*
     if (cantidadLamparas>5)
     {
         descuento = 0.5;
@@ -80,6 +82,57 @@ function CalcularPrecio ()
             }
         }
     }
+    */
+
+    // SWITCH
+    switch (cantidadLamparas) 
+    {
+        case 1:
+        case 2:
+            descuento = 0;
+            break;
+        case 3:    
+            switch (marcaSeleccionada) 
+            {
+                case "ArgentinaLuz":
+                    descuento = 0.15;
+                    break;
+                case "FelipeLamparas":   
+                    descuento = 0.1;
+                    break;
+                default:
+                    descuento = 0.05;
+                    break;
+            }
+            break;
+        case 4:
+            switch (marcaSeleccionada) 
+            {
+                case "ArgentinaLuz": 
+                case "FelipeLamparas": 
+                    descuento = 0.25;
+                    break; 
+                default:
+                    descuento = 0.2;
+                    break;
+            }
+            break;
+        case 5:
+            switch (marcaSeleccionada) 
+            {
+                case "ArgentinaLuz": 
+                    descuento = 0.4;
+                    break;
+                default:
+                    descuento = 0.3;
+                    break;
+            }
+            break;
+        default:
+            descuento = 0.5;
+            break;
+            
+    }
 
     precioSinDescuento = cantidadLamparas * precioLamparas;
 
@@ -90,8 +143,8 @@ function CalcularPrecio ()
         ingresosBrutos = precioConDescuento * 0.1;
         alert("Usted pagó $"+ingresosBrutos+" de IIBB.");
     }
-
+    
     precioTotal = precioConDescuento + ingresosBrutos;
     
-    txtIdprecioDescuento.value = precioTotal;
+    document.getElementById('txtIdprecioDescuento').value = precioTotal;
 }

@@ -8,16 +8,16 @@ function mostrar()
 	{
 		case "Julio":
 		case "Agosto":	
-			alert("Abrigate que hace frío!");
+			alert("Abrigate que hace frío.");
 			break;	
 		case "Septiembre":
 		case "Octubre":
 		case "Noviembre":
 		case "Diciembre":
-			alert("UFF, safamos");
+			alert("Ya pasamos el frío, ahora calor!!");
 			break;
 		default:	
-			alert("Se viene el coronavirus la puta madre!");
+			alert("Falta para el invierno.");
 			break;
 	}
 }//FIN DE LA FUNCIÓN

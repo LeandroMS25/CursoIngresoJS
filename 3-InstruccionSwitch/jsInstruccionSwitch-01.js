@@ -18,8 +18,5 @@ function mostrar()
 		case "Diciembre":
 			alert("Felices fiestas!!");
 			break;
-		default:
-			alert("Meses de mierda.");
-			break;
 	}
 }//FIN DE LA FUNCIÓN
