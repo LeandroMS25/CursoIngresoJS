@@ -136,7 +136,7 @@ function CalcularPrecio ()
 
     precioSinDescuento = cantidadLamparas * precioLamparas;
 
-    precioConDescuento = precioSinDescuento - (precioSinDescuento * descuento);
+    precioConDescuento = precioSinDescuento - (precioSinDescuento * descuento); 
 
     if (precioConDescuento>120)
     {
