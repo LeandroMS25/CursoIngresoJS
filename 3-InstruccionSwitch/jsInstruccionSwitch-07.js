@@ -15,7 +15,7 @@ function mostrar()
 		case "Mar del plata":
 			alert("El destino seleccionado se encuentra en el Este.");
 			break;
-		case "Cordoba":
+		case "Ushuaia":
 			alert("El destino seleccionado se encuentra en el Sur.");
 			break;
 	}

@@ -69,7 +69,7 @@ function mostrar()
 
 	diferenciaPosNeg = sumaPositivos + sumaNegativos;
 
-	document.writeln("La suma de números negativos es :"+sumaNegativos+"<br>");
+	document.write("La suma de números negativos es :"+sumaNegativos+"<br>");
 	document.write("La suma de números positivos es :"+sumaPositivos+"<br>");
 	document.write("La cantidad de números negativos es :"+cantidadNegativos+"<br>");
 	document.write("La cantidad de números positivos es :"+cantidadPositivos+"<br>");

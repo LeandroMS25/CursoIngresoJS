@@ -3,13 +3,13 @@ al presionar el botón mostrar 10 repeticiones
 con números DESCENDENTES, desde el 10 al 1.*/
 function mostrar()
 {
-	let contador;
+	let i;
 
-	contador = 10;
+	i = 10;
 
-	while (contador>0)
+	while (i>0)
 	{
-		alert("Tu número es: "+ contador);
-		contador--;
+		alert(i);
+		i--;
 	}
 }//FIN DE LA FUNCIÓN
