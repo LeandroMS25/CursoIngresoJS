@@ -7,27 +7,36 @@ function mostrar()
 	var numeroMaximo;
 	var numeroMinimo;
 	var respuesta;
+	var flag;
 	
 	respuesta = true;
-	numeroMaximo = 0;
-	numeroMinimo = 10000;
+	flag = 0;
 
 	while (respuesta == true)
 	{
 		numeroIngresado = prompt("Ingrese un número cualquiera.");
 		numeroIngresado = parseInt(numeroIngresado);
 
-		if (numeroIngresado>numeroMaximo)
+		if (flag == 0)
 		{
-		numeroMaximo = numeroIngresado;
+			numeroMaximo = numeroIngresado;
+			numeroMinimo = numeroIngresado;
+			flag = 1;
 		}
 		else
 		{
-			if (numeroIngresado<numeroMinimo)
+			if (numeroIngresado>numeroMaximo)
 			{
-				numeroMinimo = numeroIngresado;
-			}	
-		}	
+				numeroMaximo = numeroIngresado;
+			}
+			else
+			{
+				if (numeroIngresado<numeroMinimo)
+				{
+					numeroMinimo = numeroIngresado;
+				}	
+			}
+		} 	
 		respuesta =	confirm("¿Desea ingresar otro número?");
 	}
 	

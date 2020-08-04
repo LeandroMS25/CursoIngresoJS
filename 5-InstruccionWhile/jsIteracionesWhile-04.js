@@ -3,14 +3,21 @@ al presionar el botón
 pedir un número entre 0 y 9 inclusive.*/
 function mostrar()
 {
-	let numero;
+	let numeroIngresado;
+	
+	// LA FORMA DEL PROFESOR
+	numeroIngresado = prompt("Por favor, ingrese un número que éste entre 0 y 9, inclusive.");
+	numeroIngresado = parseInt(numeroIngresado);
 
-	numero = 10;
+	// MI FORMA
+	
+	//numeroIngresado = 10;
 
-	while (numero<0 || numero>9)
+	while (numeroIngresado<0 || numeroIngresado>9)
 	{
-		numero = prompt("Por favor, ingrese un número que éste entre 0 y 9, inclusive.");
+		numeroIngresado = prompt("ERROR! Reingrese un número que éste entre 0 y 9, inclusive.");
+		numeroIngresado = parseInt(numeroIngresado);
 	}
 
-	document.getElementById('txtIdNumero').value = numero;
+	document.getElementById('txtIdNumero').value = numeroIngresado;
 }//FIN DE LA FUNCIÓN

@@ -22,7 +22,7 @@ function mostrar()
 	var cantidadPares;
 	var promedioPositivos;
 	var promediosNegativos;
-	var diferenciaPosNeg;
+	var diferenciaPositivoNegativo;
 	var respuesta;
 
 	sumaPositivos = 0;
@@ -67,15 +67,15 @@ function mostrar()
 	promedioPositivos = sumaPositivos / cantidadPositivos;
 	promediosNegativos = sumaNegativos / cantidadNegativos;
 
-	diferenciaPosNeg = sumaPositivos + sumaNegativos;
+	diferenciaPositivoNegativo = sumaPositivos + sumaNegativos;
 
-	document.write("La suma de números negativos es :"+sumaNegativos+"<br>");
-	document.write("La suma de números positivos es :"+sumaPositivos+"<br>");
-	document.write("La cantidad de números negativos es :"+cantidadNegativos+"<br>");
-	document.write("La cantidad de números positivos es :"+cantidadPositivos+"<br>");
-	document.write("La cantidad de ceros es :"+cantidadCeros+"<br>");
-	document.write("La cantidad de números pares es :"+cantidadPares+"<br>");
-	document.write("El promedio de los números negativos es :"+promediosNegativos+"<br>");
-	document.write("El promedio de los números positivos es :"+promedioPositivos+"<br>");
-	document.write("La diferencia entre los números positivos y los negativos es :"+diferenciaPosNeg+"<br>");
+	document.write("<h2>La suma de números negativos es: "+sumaNegativos+"</h2><br>"); 
+	document.write("La suma de números positivos es: "+sumaPositivos+"<br>");
+	document.write("La cantidad de números negativos es: "+cantidadNegativos+"<br>");
+	document.write("La cantidad de números positivos es: "+cantidadPositivos+"<br>");
+	document.write("La cantidad de ceros es: "+cantidadCeros+"<br>");
+	document.write("La cantidad de números pares es: "+cantidadPares+"<br>");
+	document.write("El promedio de los números negativos es: "+promediosNegativos+"<br>");
+	document.write("El promedio de los números positivos es: "+promedioPositivos+"<br>");
+	document.write("La diferencia entre los números positivos y los negativos es: "+diferenciaPositivoNegativo+"<br>");
 }

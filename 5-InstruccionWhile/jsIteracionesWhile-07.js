@@ -32,4 +32,4 @@ function mostrar()
 	document.getElementById('txtIdSuma').value = acumulador;
 	document.getElementById('txtIdPromedio').value = promedio;
 
-}//FIN DE LA FUNCIÓN
+}//FIN DE LA FUNCIÓN 

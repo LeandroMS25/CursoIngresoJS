@@ -18,11 +18,14 @@ function mostrar()
 
 		if (numeroIngresado>0)
 		{
-		sumaPositivos += numeroIngresado;
+			sumaPositivos += numeroIngresado;
 		}
 		else
 		{
+			if (numeroIngresado<0)
+			{
 			multiploNegativos *= numeroIngresado;
+			}
 		}
 		
 		respuesta =	confirm("¿Desea ingresar otro número?");

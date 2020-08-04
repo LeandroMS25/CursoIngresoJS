@@ -5,9 +5,11 @@ function mostrar()
 {
 	var sexoIngresado;
 
-	while (sexoIngresado != "Femenino" && sexoIngresado != "Masculino")
+	sexoIngresado = prompt("Ingrese el sexo (f o m).");
+
+	while (sexoIngresado != "f" && sexoIngresado != "m")
 	{
-		sexoIngresado = prompt("Ingrese Femenino o Masculino dependiendo su sexo.");
+		sexoIngresado = prompt("ERROR! Ingrese el sexo (f o m).");
 	}
 
 	document.getElementById('txtIdSexo').value = sexoIngresado;
