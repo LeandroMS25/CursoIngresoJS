@@ -17,26 +17,15 @@ function mostrar()
 		numeroIngresado = prompt("Ingrese un número cualquiera.");
 		numeroIngresado = parseInt(numeroIngresado);
 
-		if (flag == 0)
+		if (flag == 0 || numeroIngresado>numeroMaximo)
 		{
 			numeroMaximo = numeroIngresado;
-			numeroMinimo = numeroIngresado;
-			flag = 1;
 		}
-		else
+		if (flag == 0 || numeroIngresado<numeroMinimo)
 		{
-			if (numeroIngresado>numeroMaximo)
-			{
-				numeroMaximo = numeroIngresado;
-			}
-			else
-			{
-				if (numeroIngresado<numeroMinimo)
-				{
-					numeroMinimo = numeroIngresado;
-				}	
-			}
-		} 	
+			numeroMinimo = numeroIngresado;
+		}
+		flag = 1;
 		respuesta =	confirm("¿Desea ingresar otro número?");
 	}
 	
