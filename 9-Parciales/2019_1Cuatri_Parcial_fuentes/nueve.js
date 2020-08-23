@@ -55,6 +55,14 @@ function mostrar()
 
         if (temperatura%2 == 0) 
         {
+            // if (cantidadTempPares == 0) 
+            // {
+            //     document.writeln("Las temperaturas pares ingresadas son: "+temperatura+"; ");
+            // }
+            // else
+            // {
+            //     document.writeln(temperatura+"; ");  
+            // }
             cantidadTempPares++;
         }
 
@@ -81,10 +89,11 @@ function mostrar()
     }
 
     promedioHabitantesPorPais = acumuladorHabitantes / cantidadPaises;
-
+    
     document.write("<h2>La cantidad de temperaturas pares es: "+cantidadTempPares+"</h2><br>");
     document.write("<h2>El país con menos habitantes es: "+paisMenosHabitantes+"</h2><br>");
-    document.write("<h2>La cantidad de países con temperatura mayor a 40 es: "+cantidadPaisesTempAlta+"</h2><br>");
+    document.write("<h2>La cantidad de países con temperatura mayor a 40 grados es: "+cantidadPaisesTempAlta+"</h2><br>");
     document.write("<h2>El promedio de habitantes entre los países ingresados es: "+promedioHabitantesPorPais+"</h2><br>");
     document.write("<h2>El país con la temperatura mínima ingresada es: "+paisTempMinima+"</h2><br>");
+    
 }
